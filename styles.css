@@ -1,0 +1,167 @@
+/* Base reset for consistent rendering */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container grid layout */
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main-content sidebar"
+        "footer footer";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    height: 100vh;
+}
+
+/* Header with Flexbox for centering content */
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+header img {
+    width: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+.header img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+/* Main content styling */
+.main-content {
+    grid-area: main-content;
+    background-color: #fff;
+    padding: 40px;
+    border-left: 2px solid #e1e1e1;
+}
+
+.main-content h2 {
+    font-size: 32px;
+    color: #48BB78; /* Blog post titles */
+}
+
+.main-content .meta {
+    color: #718096; /* Date and Author */
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    margin-bottom: 18px;
+    color: #2D3748;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+}
+
+.article1 img {
+    float: left; 
+    margin-right: 40px; 
+    width: 620px; 
+    height: auto;
+}
+/*
+.article2 img {
+    float: right; 
+    margin-right: 40px; 
+    width: 500px; 
+    height: auto;
+}
+*/
+
+.article2 img {
+    float: right; 
+    margin-right: 40px; 
+    width: 450px; 
+    height: auto;
+}
+
+
+/* Sidebar styling */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sidebar .about-heading {
+    color: #000000; /* About heading */
+}
+
+/* About section background */
+.about-section {
+    background-color: #E2E8F0;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.sidebar .social-heading{
+    color: #48BB78; /* Social Media heading */
+}
+
+.social-media-section {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.sidebar .archives-heading {
+    color: #48BB78; /* Archives heading */
+}
+
+.archive-section {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a {
+    color: #4299E1; /* Social Media and Archive links */
+    text-decoration: none;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+}
+
+/* Footer styling */
+.footer {
+    grid-area: footer;
+    background-color: #2C5282;
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
